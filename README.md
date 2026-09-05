@@ -2,6 +2,8 @@
 
 Self-managed [shadcn GitHub registry](https://ui.shadcn.com/docs/registry/github) for Khora React UI.
 
+Bun workspace monorepo: private packages under `packages/*`, examples under `packages/*/example`.
+
 ## Install
 
 ```bash
@@ -19,10 +21,26 @@ bunx shadcn@latest list khoralabs/react
 
 ## Layout
 
-- `chat/` — chat UI (from former `@khoralabs/chat-react`)
-- `memories/` — memories graph UI (from former `@khoralabs/memories-react-graph`)
-- `obp/` — OBP NBC chain UI (from former `@khoralabs/obp-react`)
-- Domain clients stay on npm (`@khoralabs/chat`, `@khoralabs/memories-service`, `@khoralabs/obp-nbc`, …)
+| Package | Registry items |
+|---------|----------------|
+| `packages/utils` | `utils` |
+| `packages/ui` | `ui` |
+| `packages/chat` | `chat`, `chat-*` |
+| `packages/memories` | `memories`, `memories-*` |
+| `packages/obp` | `obp`, `obp-*` |
+
+Domain clients stay on npm (`@khoralabs/chat`, `@khoralabs/memories-service`, `@khoralabs/obp-nbc`, …). Shared UI deps are pinned in the root workspace `catalog`.
+
+Until `ChatClient` / `memories-service/react-client` ship on those npm packages, the registry inlines those thin ports (`packages/chat/components/chat/client.ts`, `packages/memories/lib/react-client.ts`).
+
+### Local examples
+
+```bash
+bun install
+bun run dev:chat
+bun run dev:memories
+bun run dev:obp
+```
 
 ### Memories items
 

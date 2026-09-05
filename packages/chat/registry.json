@@ -1,0 +1,186 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "chat-hooks",
+      "type": "registry:hook",
+      "title": "Chat hooks",
+      "description": "Agent loading, drag-drop, scroll-to-post",
+      "dependencies": [
+        "ai",
+        "@shadcn/react"
+      ],
+      "files": [
+        {
+          "path": "hooks/use-agent-loading.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "hooks/use-chat-drag-drop.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "hooks/use-scroll-to-post.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "chat-ui",
+      "type": "registry:block",
+      "title": "Chat UI surfaces",
+      "description": "Thread view, composer, post messages, ai-elements",
+      "dependencies": [
+        "@khoralabs/chat",
+        "ai",
+        "lucide-react",
+        "motion",
+        "nanoid",
+        "shiki",
+        "streamdown",
+        "@streamdown/cjk",
+        "@streamdown/code",
+        "@streamdown/math",
+        "@streamdown/mermaid",
+        "@shadcn/react",
+        "@radix-ui/react-use-controllable-state"
+      ],
+      "registryDependencies": [
+        "khoralabs/react/ui",
+        "khoralabs/react/utils",
+        "khoralabs/react/chat-hooks"
+      ],
+      "files": [
+        {
+          "path": "components/chat/ai-elements/attachments.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/ai-elements/chain-of-thought.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/ai-elements/code-block.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/ai-elements/confirmation.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/ai-elements/conversation.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/ai-elements/message.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/ai-elements/prompt-input.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/ai-elements/reasoning.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/ai-elements/shimmer.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/ai-elements/streamdown-plugins.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/ai-elements/tool.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/attachments-bridge.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/author-avatar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/chat-thread-view.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/drop-overlay.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/layout.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/post-messages.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/prompt-composer.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "chat-headless",
+      "type": "registry:component",
+      "title": "Chat headless provider",
+      "description": "ChatProvider, data hooks, and display adapters",
+      "dependencies": [
+        "@khoralabs/chat",
+        "ai",
+        "react",
+        "react-dom"
+      ],
+      "registryDependencies": [
+        "khoralabs/react/chat-hooks"
+      ],
+      "files": [
+        {
+          "path": "components/chat/provider.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/client.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/adapters.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/chat/ai-elements/conversation.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "chat",
+      "type": "registry:block",
+      "title": "Chat kit",
+      "description": "Full chat headless + UI kit for hosts",
+      "registryDependencies": [
+        "khoralabs/react/chat-headless",
+        "khoralabs/react/chat-ui",
+        "khoralabs/react/ui",
+        "khoralabs/react/utils",
+        "khoralabs/react/chat-hooks"
+      ],
+      "files": [
+        {
+          "path": "styles/theme-bridge.css",
+          "type": "registry:style",
+          "target": "~/src/styles/khoralabs-chat-theme-bridge.css"
+        }
+      ]
+    }
+  ]
+}

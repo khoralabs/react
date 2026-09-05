@@ -1,0 +1,43 @@
+{
+  "name": "@khoralabs/react-chat-example",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot src/index.ts",
+    "start": "NODE_ENV=production bun src/index.ts",
+    "build": "bun run build.ts"
+  },
+  "dependencies": {
+    "@khoralabs/chat": "catalog:",
+    "@radix-ui/react-slot": "catalog:",
+    "@radix-ui/react-use-controllable-state": "catalog:",
+    "@shadcn/react": "catalog:",
+    "@streamdown/cjk": "catalog:",
+    "@streamdown/code": "catalog:",
+    "@streamdown/math": "catalog:",
+    "@streamdown/mermaid": "catalog:",
+    "ai": "catalog:",
+    "bun-plugin-tailwind": "catalog:",
+    "class-variance-authority": "catalog:",
+    "clsx": "catalog:",
+    "cmdk": "catalog:",
+    "lucide-react": "catalog:",
+    "motion": "catalog:",
+    "nanoid": "catalog:",
+    "radix-ui": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "shadcn": "catalog:",
+    "shiki": "catalog:",
+    "streamdown": "catalog:",
+    "tailwind-merge": "catalog:",
+    "tailwindcss": "catalog:",
+    "tw-animate-css": "catalog:"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@types/bun": "catalog:"
+  }
+}
