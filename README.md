@@ -21,7 +21,8 @@ bunx shadcn@latest list khoralabs/react
 
 - `chat/` — chat UI (from former `@khoralabs/chat-react`)
 - `memories/` — memories graph UI (from former `@khoralabs/memories-react-graph`)
-- Domain clients stay on npm (`@khoralabs/chat`, `@khoralabs/memories-service`, …)
+- `obp/` — OBP NBC chain UI (from former `@khoralabs/obp-react`)
+- Domain clients stay on npm (`@khoralabs/chat`, `@khoralabs/memories-service`, `@khoralabs/obp-nbc`, …)
 
 ### Memories items
 
@@ -36,6 +37,16 @@ bunx shadcn@latest list khoralabs/react
 Peer runtime for graph: `three`, `@react-three/fiber`, `@react-three/drei`, `@react-three/postprocessing`.
 
 Client port: `@khoralabs/memories-service/react-client` (factory: `…/react-client/service`).
+
+### OBP items
+
+| Item | Role |
+|------|------|
+| `obp` | Full kit |
+| `obp-nbc-chain` | NbcChain provider, scene, chrome, nodes, details |
+| `obp-utils` | `mergeClassNames` |
+
+Peer runtime: `@xyflow/react`. Host must `@import "@xyflow/react/dist/style.css"` (not shipped by the registry barrel). Graph types / `collectNbcChainGraph` from `@khoralabs/obp-nbc`.
 
 ## Host Tailwind
 

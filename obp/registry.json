@@ -1,0 +1,99 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "obp-utils",
+      "type": "registry:lib",
+      "title": "OBP className helper",
+      "description": "mergeClassNames for NBC chain UI",
+      "files": [
+        {
+          "path": "lib/merge-class-names.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "obp-nbc-chain",
+      "type": "registry:block",
+      "title": "OBP NBC chain UI",
+      "description": "XYFlow NBC chain provider, scene, chrome, nodes, details",
+      "dependencies": [
+        "@khoralabs/obp-nbc",
+        "@khoralabs/obp-core",
+        "@xyflow/react",
+        "react",
+        "react-dom"
+      ],
+      "registryDependencies": ["khoralabs/react/obp-utils"],
+      "files": [
+        {
+          "path": "components/obp/nbc-chain/chrome.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/obp/nbc-chain/compound.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/obp/nbc-chain/context.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/obp/nbc-chain/details.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/obp/nbc-chain/flow-types.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/obp/nbc-chain/format.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/obp/nbc-chain/layout.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/obp/nbc-chain/nodes.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/obp/nbc-chain/provider.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/obp/nbc-chain/scene.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/obp/nbc-chain/structural-layout.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/obp/nbc-chain/viewport-fit.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/obp/index.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "obp",
+      "type": "registry:block",
+      "title": "OBP kit",
+      "description": "Full OBP NBC chain UI kit for hosts",
+      "registryDependencies": ["khoralabs/react/obp-nbc-chain", "khoralabs/react/obp-utils"],
+      "files": [
+        {
+          "path": "styles/theme-bridge.css",
+          "type": "registry:style",
+          "target": "~/src/styles/khoralabs-obp-theme-bridge.css"
+        }
+      ]
+    }
+  ]
+}
