@@ -7,6 +7,14 @@ import {
   useMemo,
   useState,
 } from "react";
+import type {
+  NamespaceSearchArms,
+  NamespaceSearchHitResult,
+} from "@/components/memories/memories-client";
+import {
+  useMemoriesClient,
+  useMemoriesDatabase,
+} from "@/components/memories/memories-client-provider";
 import {
   type MemoriesGraphNamespaceEntry,
   namespacePathsFromEntries,
@@ -19,8 +27,6 @@ import {
 } from "@/lib/namespace-path";
 import { buildNamespaceTree, type NamespaceTreeNode } from "@/lib/namespace-tree";
 import { DEFAULT_SEARCH_DEBOUNCE_MS } from "@/lib/search-debounce";
-import type { NamespaceSearchArms, NamespaceSearchHitResult } from "@/components/memories/memories-client";
-import { useMemoriesClient, useMemoriesDatabase } from "@/components/memories/memories-client-provider";
 
 /**
  * How graph/search/catalog queries interpret the focused namespace path.
@@ -350,7 +356,6 @@ export function MemoriesNamespacesProvider({
   }, [namespaceRoot, namespaceProp, scopeProp]);
 
   // Reset focus + search when the focused database changes.
-  // biome-ignore lint/correctness/useExhaustiveDependencies: intentional reset on DB switch
   useEffect(() => {
     const root = resolveNamespaceRootProp(namespaceRootProp);
     const focused = resolveFocusedNamespace(namespaceProp, root);

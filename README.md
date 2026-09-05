@@ -42,6 +42,17 @@ bun run dev:memories
 bun run dev:obp
 ```
 
+### Tooling
+
+```bash
+bun run format:check   # Biome (also pre-commit)
+bun run typecheck      # packages/* only
+bun run verify         # format + typecheck (also pre-push)
+bun run review         # agent-review on staged changes
+```
+
+Husky: `pre-commit` → Biome; `commit-msg` → `@khoralabs/agent-review`; `pre-push` → `verify`. Copy `.env.example` for `AI_GATEWAY_API_KEY` / `SKIP_AGENT_REVIEW`.
+
 ### Memories items
 
 | Item | Role |

@@ -1,7 +1,7 @@
 import { useMemo } from "react";
-import { cn } from "@/lib/utils";
-import { measure, type WhiteSpaceMode } from "@/lib/pretext-measure";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { measure, type WhiteSpaceMode } from "@/lib/pretext-measure";
+import { cn } from "@/lib/utils";
 
 export type MeasuredTextProps = {
   text: string;
@@ -65,12 +65,7 @@ export function MeasuredText({
       title={result.truncated ? text : undefined}
     >
       {result.lines.map((line, i) => (
-        <span
-          // biome-ignore lint/suspicious/noArrayIndexKey: lines are paragraph-positional, not identity-bearing
-          key={i}
-          className="block"
-          style={{ height: `${lineHeight}px` }}
-        >
+        <span key={i} className="block" style={{ height: `${lineHeight}px` }}>
           {line.length === 0 ? "\u00a0" : line}
         </span>
       ))}

@@ -303,7 +303,6 @@ export function MemoriesNamespaceMemoriesProvider({
   }, [reload]);
 
   // Clear focus + search when namespace, scope, or database changes.
-  // biome-ignore lint/correctness/useExhaustiveDependencies: intentional reset on focus scope / DB
   useEffect(() => {
     setFocused(null);
     setSearchQuery("");

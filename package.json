@@ -2,7 +2,10 @@
   "name": "@khoralabs/react",
   "private": true,
   "workspaces": {
-    "packages": ["packages/*", "packages/*/example"],
+    "packages": [
+      "packages/*",
+      "packages/*/example"
+    ],
     "catalog": {
       "react": "^19",
       "react-dom": "^19",
@@ -47,14 +50,25 @@
     }
   },
   "scripts": {
+    "biome": "biome check .",
+    "check": "biome check .",
+    "check:write": "biome check --write .",
+    "format": "biome check --write .",
+    "format:check": "biome check .",
     "typecheck": "bun run --filter './packages/*' typecheck",
     "dev:chat": "bun run --filter @khoralabs/react-chat-example dev",
     "dev:memories": "bun run --filter @khoralabs/react-memories-example dev",
     "dev:obp": "bun run --filter @khoralabs/react-obp-example dev",
-    "build:examples": "bun run --filter '*example' build"
+    "build:examples": "bun run --filter '*example' build",
+    "prepare": "husky",
+    "review": "agent-review run --scope staged --include-workstream",
+    "verify": "bun run format:check && bun run typecheck"
   },
   "devDependencies": {
-    "typescript": "catalog:",
-    "@types/bun": "catalog:"
+    "@biomejs/biome": "^2.4.16",
+    "@khoralabs/agent-review": "0.2.2",
+    "@types/bun": "catalog:",
+    "husky": "^9.1.7",
+    "typescript": "catalog:"
   }
 }

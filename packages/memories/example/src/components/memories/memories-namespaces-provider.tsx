@@ -356,7 +356,6 @@ export function MemoriesNamespacesProvider({
   }, [namespaceRoot, namespaceProp, scopeProp]);
 
   // Reset focus + search when the focused database changes.
-  // biome-ignore lint/correctness/useExhaustiveDependencies: intentional reset on DB switch
   useEffect(() => {
     const root = resolveNamespaceRootProp(namespaceRootProp);
     const focused = resolveFocusedNamespace(namespaceProp, root);

@@ -13,9 +13,7 @@
         "radix-ui",
         "cmdk"
       ],
-      "registryDependencies": [
-        "khoralabs/react/utils"
-      ],
+      "registryDependencies": ["khoralabs/react/utils"],
       "files": [
         {
           "path": "components/ui/alert.tsx",

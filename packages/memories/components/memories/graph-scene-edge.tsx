@@ -2,10 +2,10 @@ import { Html, Line } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import { type ComponentRef, useMemo, useRef } from "react";
 import * as THREE from "three";
-import { cn } from "@/lib/utils";
 import { fogChannelStrength, useGraphSceneFog } from "@/components/memories/graph-scene-fog";
 import type { GraphSceneEdgeItem, SceneEdge } from "@/components/memories/projection-types";
 import { useProjection } from "@/components/memories/use-projection";
+import { cn } from "@/lib/utils";
 
 const PICK_RADIUS = 0.028;
 const DASH_SCROLL_SPEED = 10;

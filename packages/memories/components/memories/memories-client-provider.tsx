@@ -10,7 +10,10 @@ import {
 } from "react";
 
 import type { ReactMemoriesClient } from "@/components/memories/memories-client";
-import { type MemoriesDatabaseId, memoriesDatabaseKey } from "@/components/memories/memories-client";
+import {
+  type MemoriesDatabaseId,
+  memoriesDatabaseKey,
+} from "@/components/memories/memories-client";
 
 /** Linked ontology document (opaque to the UI package — hosts validate forms). */
 export type MemoriesOntologySchema = Record<string, unknown>;

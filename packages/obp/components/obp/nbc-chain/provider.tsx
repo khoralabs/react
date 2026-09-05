@@ -7,10 +7,10 @@ import {
   useNodesState,
 } from "@xyflow/react";
 import { type ComponentProps, type ReactNode, useEffect, useMemo, useState } from "react";
+import { mergeClassNames } from "@/lib/merge-class-names";
 import { NbcChainContext, type NbcChainContextValue } from "./context";
 import type { NbcChainAfterBindViewport, NbcChainFlowSelection } from "./flow-types";
 import { nbcChainGraphToFlow } from "./layout";
-import { mergeClassNames } from "@/lib/merge-class-names";
 import { nbcChainDefaultNodeTypes } from "./nodes";
 import { NBC_CHAIN_CANVAS_SHELL_LAYOUT } from "./structural-layout";
 

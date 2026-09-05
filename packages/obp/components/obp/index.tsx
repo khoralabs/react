@@ -33,7 +33,6 @@ export {
   type NbcChainPortNodeData,
   nbcChainGraphToFlow,
 } from "@/components/obp/nbc-chain/layout";
-export { mergeClassNames } from "@/lib/merge-class-names";
 export {
   NbcChainOfferNode,
   type NbcChainOfferNodeProps,
@@ -49,3 +48,4 @@ export {
   NBC_CHAIN_CANVAS_SHELL_LAYOUT,
   NBC_CHAIN_SCENE_FLOW_LAYOUT,
 } from "@/components/obp/nbc-chain/structural-layout";
+export { mergeClassNames } from "@/lib/merge-class-names";

@@ -65,12 +65,7 @@ export function MeasuredText({
       title={result.truncated ? text : undefined}
     >
       {result.lines.map((line, i) => (
-        <span
-          // biome-ignore lint/suspicious/noArrayIndexKey: lines are paragraph-positional, not identity-bearing
-          key={i}
-          className="block"
-          style={{ height: `${lineHeight}px` }}
-        >
+        <span key={i} className="block" style={{ height: `${lineHeight}px` }}>
           {line.length === 0 ? "\u00a0" : line}
         </span>
       ))}

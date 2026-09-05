@@ -6,47 +6,6 @@ export {
   AddNamespaceButton,
   type AddNamespaceButtonProps,
 } from "@/components/memories/add-namespace-button";
-export { Badge, badgeVariants } from "@/components/ui/badge";
-export {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
-export {
-  InputGroup,
-  InputGroupAddon,
-  InputGroupButton,
-  InputGroupInput,
-  InputGroupText,
-  InputGroupTextarea,
-} from "@/components/ui/input-group";
-export {
-  Sidebar,
-  SidebarContent,
-  SidebarFooter,
-  SidebarGroup,
-  SidebarGroupAction,
-  SidebarGroupContent,
-  SidebarGroupLabel,
-  SidebarHeader,
-  SidebarInput,
-  SidebarInset,
-  SidebarMenu,
-  SidebarMenuAction,
-  SidebarMenuBadge,
-  SidebarMenuButton,
-  SidebarMenuItem,
-  SidebarMenuSkeleton,
-  SidebarMenuSub,
-  SidebarMenuSubButton,
-  SidebarMenuSubItem,
-  SidebarProvider,
-  SidebarRail,
-  SidebarSeparator,
-  SidebarTrigger,
-  useSidebar,
-} from "@/components/ui/sidebar";
-export { Spinner } from "@/components/ui/spinner";
 export {
   EdgeBillboard,
   EdgeBillboardHeader,
@@ -75,7 +34,10 @@ export {
   type GraphCameraReframeHintProps,
   useGraphCameraChrome,
 } from "@/components/memories/graph-camera-chrome";
-export { GraphFetchError, type GraphFetchErrorProps } from "@/components/memories/graph-fetch-error";
+export {
+  GraphFetchError,
+  type GraphFetchErrorProps,
+} from "@/components/memories/graph-fetch-error";
 export { GraphLoading, type GraphLoadingProps } from "@/components/memories/graph-loading";
 export {
   GraphNamespaceSearch,
@@ -86,7 +48,10 @@ export {
   type GraphNamespaceTreeProps,
 } from "@/components/memories/graph-namespace-tree";
 export { GraphOverlayContainer } from "@/components/memories/graph-overlay-container";
-export { GraphPinnedEscHint, type GraphPinnedEscHintProps } from "@/components/memories/graph-pinned-esc-hint";
+export {
+  GraphPinnedEscHint,
+  type GraphPinnedEscHintProps,
+} from "@/components/memories/graph-pinned-esc-hint";
 export {
   GraphPreviewDock,
   type GraphPreviewDockContent,
@@ -123,37 +88,6 @@ export type {
   GraphSceneNodeRender,
 } from "@/components/memories/graph-scene-slots";
 export { GraphSearch, type GraphSearchProps } from "@/components/memories/graph-search";
-export {
-  contentArmsToMergeItems,
-  ensureMergeContent,
-  isReservedContentSourceKey,
-  type PreviewContentArm,
-  type PreviewLabel,
-  userContentArms,
-} from "@/lib/memory-merge";
-export { resolveMemoryPathIdentity } from "@/lib/memory-path";
-export {
-  entriesToProperties,
-  type PropertyEntry,
-  propertiesToEntries,
-} from "@/lib/memory-properties";
-export type {
-  MemoriesGraphNamespaceEntry,
-  MemoriesGraphNamespaceEntryInput,
-} from "@/lib/namespace-entries";
-export {
-  joinNamespacePath,
-  NAMESPACE_MAX_DEPTH,
-  NAMESPACE_MAX_PATH_LENGTH,
-  type NamespacePathPolicy,
-  validateNamespacePath,
-  validateNamespaceSegment,
-} from "@/lib/namespace-path";
-export { DEFAULT_SEARCH_DEBOUNCE_MS } from "@/lib/search-debounce";
-export {
-  installBenignResizeObserverErrorSuppression,
-  isBenignResizeObserverError,
-} from "@/lib/suppress-benign-resize-observer-errors";
 export type {
   EdgeDetailJson,
   EdgePreviewJson,
@@ -254,16 +188,6 @@ export type {
   GraphSceneResolvedOverlay,
 } from "@/components/memories/scene";
 export { GraphScene, resolveGraphSceneOverlay } from "@/components/memories/scene";
-export { useEdgeDetail } from "@/hooks/use-edge-detail";
-export {
-  type GraphMemoriesSearchValue,
-  type GraphNamespacesSearchValue,
-  graphNamespaceSearchSummaryLine,
-  graphSearchSummaryLine,
-  useGraphMemoriesSearch,
-  useGraphNamespacesSearch,
-} from "@/hooks/use-graph-search";
-export { useMemoryDetail } from "@/hooks/use-memory-detail";
 export type {
   GraphProjectionProviderProps,
   GraphScope,
@@ -277,4 +201,86 @@ export {
   useMemoriesGraphChrome,
   useProjection,
 } from "@/components/memories/use-projection";
+export { Badge, badgeVariants } from "@/components/ui/badge";
+export {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
+export {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupButton,
+  InputGroupInput,
+  InputGroupText,
+  InputGroupTextarea,
+} from "@/components/ui/input-group";
+export {
+  Sidebar,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarGroupAction,
+  SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarHeader,
+  SidebarInput,
+  SidebarInset,
+  SidebarMenu,
+  SidebarMenuAction,
+  SidebarMenuBadge,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  SidebarMenuSkeleton,
+  SidebarMenuSub,
+  SidebarMenuSubButton,
+  SidebarMenuSubItem,
+  SidebarProvider,
+  SidebarRail,
+  SidebarSeparator,
+  SidebarTrigger,
+  useSidebar,
+} from "@/components/ui/sidebar";
+export { Spinner } from "@/components/ui/spinner";
+export { useEdgeDetail } from "@/hooks/use-edge-detail";
+export {
+  type GraphMemoriesSearchValue,
+  type GraphNamespacesSearchValue,
+  graphNamespaceSearchSummaryLine,
+  graphSearchSummaryLine,
+  useGraphMemoriesSearch,
+  useGraphNamespacesSearch,
+} from "@/hooks/use-graph-search";
+export { useMemoryDetail } from "@/hooks/use-memory-detail";
 export { useSuppressBenignResizeObserverErrors } from "@/hooks/use-suppress-benign-resize-observer-errors";
+export {
+  contentArmsToMergeItems,
+  ensureMergeContent,
+  isReservedContentSourceKey,
+  type PreviewContentArm,
+  type PreviewLabel,
+  userContentArms,
+} from "@/lib/memory-merge";
+export { resolveMemoryPathIdentity } from "@/lib/memory-path";
+export {
+  entriesToProperties,
+  type PropertyEntry,
+  propertiesToEntries,
+} from "@/lib/memory-properties";
+export type {
+  MemoriesGraphNamespaceEntry,
+  MemoriesGraphNamespaceEntryInput,
+} from "@/lib/namespace-entries";
+export {
+  joinNamespacePath,
+  NAMESPACE_MAX_DEPTH,
+  NAMESPACE_MAX_PATH_LENGTH,
+  type NamespacePathPolicy,
+  validateNamespacePath,
+  validateNamespaceSegment,
+} from "@/lib/namespace-path";
+export { DEFAULT_SEARCH_DEBOUNCE_MS } from "@/lib/search-debounce";
+export {
+  installBenignResizeObserverErrorSuppression,
+  isBenignResizeObserverError,
+} from "@/lib/suppress-benign-resize-observer-errors";

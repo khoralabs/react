@@ -1,9 +1,9 @@
 import { type MouseEvent, type ReactNode, useEffect, useState } from "react";
+import type { EdgePreviewJson, ReactMemoriesClient } from "@/components/memories/memories-client";
+import { formatOntologyLabelChain } from "@/components/memories/memory-detail-ontology";
 import { Badge } from "@/components/ui/badge";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { cn } from "@/lib/utils";
-import type { EdgePreviewJson, ReactMemoriesClient } from "@/components/memories/memories-client";
-import { formatOntologyLabelChain } from "@/components/memories/memory-detail-ontology";
 
 const HOVER_MAX_CHARS = 280;
 

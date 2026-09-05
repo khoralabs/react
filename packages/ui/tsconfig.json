@@ -6,9 +6,5 @@
       "@/lib/utils": ["../utils/lib/utils"]
     }
   },
-  "include": [
-    "components/**/*.ts",
-    "components/**/*.tsx",
-    "hooks/**/*.ts"
-  ]
+  "include": ["components/**/*.ts", "components/**/*.tsx", "hooks/**/*.ts"]
 }

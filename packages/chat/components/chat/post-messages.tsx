@@ -3,9 +3,9 @@
 import type { ChatStatus, ToolUIPart, UIMessage } from "ai";
 import { CheckIcon, XIcon } from "lucide-react";
 import { createContext, type ReactNode, useContext, useMemo } from "react";
+import { showAgentLoading } from "@/hooks/use-agent-loading.ts";
 import type { DisplayMessage } from "./adapters.ts";
 import { formatPostTimestamp } from "./adapters.ts";
-import { showAgentLoading } from "@/hooks/use-agent-loading.ts";
 import { Attachment, AttachmentPreview } from "./ai-elements/attachments.tsx";
 import {
   Confirmation,

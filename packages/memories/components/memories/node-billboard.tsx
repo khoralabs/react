@@ -7,7 +7,6 @@ import {
   useMemo,
   useState,
 } from "react";
-import { cn } from "@/lib/utils";
 import type { MemoryPreviewJson } from "@/components/memories/memories-client";
 import { useMemoriesClient } from "@/components/memories/memories-client-provider";
 import { MemoryMetadata } from "@/components/memories/memory-metadata";
@@ -18,8 +17,9 @@ import {
   type TypedGraphLabelInstance,
   type TypedProjectionPoint,
 } from "@/components/memories/projection-types";
-import { useMemoryDetail } from "@/hooks/use-memory-detail";
 import { useProjection } from "@/components/memories/use-projection";
+import { useMemoryDetail } from "@/hooks/use-memory-detail";
+import { cn } from "@/lib/utils";
 
 type NodeBillboardContextValue = {
   point: TypedProjectionPoint;

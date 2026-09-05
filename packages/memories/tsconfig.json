@@ -9,10 +9,5 @@
       "@/hooks/use-mobile.ts": ["../ui/hooks/use-mobile.ts"]
     }
   },
-  "include": [
-    "components/**/*.ts",
-    "components/**/*.tsx",
-    "hooks/**/*.ts",
-    "lib/**/*.ts"
-  ]
+  "include": ["components/**/*.ts", "components/**/*.tsx", "hooks/**/*.ts", "lib/**/*.ts"]
 }

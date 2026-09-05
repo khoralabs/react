@@ -1,6 +1,6 @@
 import type { ComponentProps } from "react";
-import { cn } from "@/lib/utils";
 import { useMemoriesGraphChrome } from "@/components/memories/use-projection";
+import { cn } from "@/lib/utils";
 
 export type GraphFetchErrorProps = ComponentProps<"span">;
 

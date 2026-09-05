@@ -6,7 +6,10 @@ import {
   type ReactNode,
   useContext,
 } from "react";
-import type { GraphSceneEdgeItem, GraphSceneNodeItem } from "@/components/memories/projection-types";
+import type {
+  GraphSceneEdgeItem,
+  GraphSceneNodeItem,
+} from "@/components/memories/projection-types";
 
 export function GraphSceneTopLeft({ children: _children }: PropsWithChildren) {
   return null;

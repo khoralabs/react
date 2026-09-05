@@ -1,8 +1,4 @@
 import type { ComponentProps, ReactNode } from "react";
-import { Button } from "@/components/ui/button";
-import { Kbd } from "@/components/ui/kbd";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
 import {
   type ChromeButtonTooltipProps,
   chromeButtonTooltipLabel,
@@ -10,6 +6,10 @@ import {
   partitionChromeButtonChildren,
 } from "@/components/chrome-button-slots";
 import { useMemoriesGraphChrome } from "@/components/memories/use-projection";
+import { Button } from "@/components/ui/button";
+import { Kbd } from "@/components/ui/kbd";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { cn } from "@/lib/utils";
 
 const DEFAULT_TOOLTIP = "Clear edge focus";
 

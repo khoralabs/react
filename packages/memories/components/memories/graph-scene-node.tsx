@@ -16,10 +16,6 @@ import {
   useState,
 } from "react";
 import * as THREE from "three";
-import { Button } from "@/components/ui/button";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
-import { MeasuredText } from "@/components/memories/measured-text";
 import {
   fogBlurCssPx,
   fogFactor,
@@ -27,9 +23,13 @@ import {
   useGraphSceneFog,
 } from "@/components/memories/graph-scene-fog";
 import { useGraphSceneRender } from "@/components/memories/graph-scene-slots";
-import { FONT_TOOLTIP_BODY, FONT_TOOLTIP_KINDS } from "@/lib/pretext-measure";
+import { MeasuredText } from "@/components/memories/measured-text";
 import type { GraphSceneNodeItem } from "@/components/memories/projection-types";
 import { useProjection } from "@/components/memories/use-projection";
+import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { FONT_TOOLTIP_BODY, FONT_TOOLTIP_KINDS } from "@/lib/pretext-measure";
+import { cn } from "@/lib/utils";
 
 /** Screen-space scale vs distance; pairs with camera FOV / zoom (see drei `Html`). */
 const MARKER_DISTANCE_FACTOR = 5;

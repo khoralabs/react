@@ -1,9 +1,12 @@
 import { Html } from "@react-three/drei";
 import { useMemo } from "react";
 import { MeasuredText } from "@/components/memories/measured-text";
-import { FONT_EDGE_BODY, FONT_EDGE_LABEL } from "@/lib/pretext-measure";
 import type { SceneEdge } from "@/components/memories/projection-types";
-import { graphLabelFingerprint, sceneEdgePairMergeKey } from "@/components/memories/projection-types";
+import {
+  graphLabelFingerprint,
+  sceneEdgePairMergeKey,
+} from "@/components/memories/projection-types";
+import { FONT_EDGE_BODY, FONT_EDGE_LABEL } from "@/lib/pretext-measure";
 
 const EDGE_LABEL_DISTANCE_FACTOR = 5;
 

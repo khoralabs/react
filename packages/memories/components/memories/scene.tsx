@@ -13,9 +13,11 @@ import {
   useState,
 } from "react";
 import * as THREE from "three";
-import { cn } from "@/lib/utils";
 import { ActiveSubgraphEdgeLabels, type GraphEdgeRenderMode } from "@/components/memories/edges";
-import { GraphCameraChromeProvider, useGraphCameraChrome } from "@/components/memories/graph-camera-chrome";
+import {
+  GraphCameraChromeProvider,
+  useGraphCameraChrome,
+} from "@/components/memories/graph-camera-chrome";
 import { GraphSceneEdge } from "@/components/memories/graph-scene-edge";
 import {
   type GraphSceneFogProp,
@@ -24,7 +26,11 @@ import {
   useGraphSceneFog,
 } from "@/components/memories/graph-scene-fog";
 import { GraphSceneFogEffects } from "@/components/memories/graph-scene-fog-effects";
-import { GraphSceneNode, GraphSceneNodeButton, GraphSceneNodeTooltip } from "@/components/memories/graph-scene-node";
+import {
+  GraphSceneNode,
+  GraphSceneNodeButton,
+  GraphSceneNodeTooltip,
+} from "@/components/memories/graph-scene-node";
 import {
   GraphSceneBottomLeft,
   GraphSceneBottomRight,
@@ -38,10 +44,14 @@ import {
   GraphSceneTopRight,
   partitionGraphSceneChildren,
 } from "@/components/memories/graph-scene-slots";
-import type { GraphSceneEdgeItem, GraphSceneNodeItem } from "@/components/memories/projection-types";
+import type {
+  GraphSceneEdgeItem,
+  GraphSceneNodeItem,
+} from "@/components/memories/projection-types";
 import { SCALE } from "@/components/memories/projection-types";
 import { useProjection } from "@/components/memories/use-projection";
 import { useSuppressBenignResizeObserverErrors } from "@/hooks/use-suppress-benign-resize-observer-errors";
+import { cn } from "@/lib/utils";
 
 /**
  * Padding around the node AABB (drei `Bounds` `margin` equivalent). Tighter than the old `margin={2}`.

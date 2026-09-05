@@ -2,11 +2,7 @@ import type { NbcChainGraph } from "@khoralabs/obp-nbc";
 import type { Edge, Node } from "@xyflow/react";
 import type { ComponentProps } from "react";
 import { formatEpochMs, formatExpiresTurn } from "./format";
-import type {
-  NbcChainBindEdgeData,
-  NbcChainOfferNodeData,
-  NbcChainPortNodeData,
-} from "./layout";
+import type { NbcChainBindEdgeData, NbcChainOfferNodeData, NbcChainPortNodeData } from "./layout";
 
 function JsonBlock({ label, value }: { label: string; value: unknown }) {
   const text = value === undefined ? "—" : JSON.stringify(value, null, 2);

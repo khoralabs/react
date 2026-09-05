@@ -1,6 +1,9 @@
 import { useMemo } from "react";
 
-import type { NamespaceSearchArms, NamespaceSearchHitResult } from "@/components/memories/memories-client";
+import type {
+  NamespaceSearchArms,
+  NamespaceSearchHitResult,
+} from "@/components/memories/memories-client";
 import { useMemoriesMemory } from "@/components/memories/memories-memory-provider";
 import { useMemoriesNamespaces } from "@/components/memories/memories-namespaces-provider";
 import type { GraphSearchState } from "@/components/memories/projection-types";

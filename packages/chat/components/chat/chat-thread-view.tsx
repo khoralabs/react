@@ -2,10 +2,10 @@
 
 import type { ChatStatus } from "ai";
 import type { ReactNode, RefObject } from "react";
-import { cn } from "@/lib/utils";
-import type { DisplayMessage } from "./adapters.ts";
 import { showAgentLoading } from "@/hooks/use-agent-loading.ts";
 import { type ScrollTarget, useScrollToPost } from "@/hooks/use-scroll-to-post.ts";
+import { cn } from "@/lib/utils";
+import type { DisplayMessage } from "./adapters.ts";
 import { ConversationProvider } from "./ai-elements/conversation.tsx";
 import type { ChatAuthor } from "./author-avatar.tsx";
 import { ChatDropOverlay } from "./drop-overlay.tsx";

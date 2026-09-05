@@ -6,12 +6,8 @@
       "type": "registry:hook",
       "title": "Memories hooks",
       "description": "Search, detail, resize-observer helpers",
-      "dependencies": [
-        "react"
-      ],
-      "registryDependencies": [
-        "khoralabs/react/utils"
-      ],
+      "dependencies": ["react"],
+      "registryDependencies": ["khoralabs/react/utils"],
       "files": [
         {
           "path": "hooks/use-suppress-benign-resize-observer-errors.ts",
@@ -24,14 +20,8 @@
       "type": "registry:component",
       "title": "Memories headless providers",
       "description": "Client, namespaces, memory, and projection providers",
-      "dependencies": [
-        "@khoralabs/memories-service",
-        "react",
-        "react-dom"
-      ],
-      "registryDependencies": [
-        "khoralabs/react/utils"
-      ],
+      "dependencies": ["@khoralabs/memories-service", "react", "react-dom"],
+      "registryDependencies": ["khoralabs/react/utils"],
       "files": [
         {
           "path": "components/memories/memories-client-provider.tsx",

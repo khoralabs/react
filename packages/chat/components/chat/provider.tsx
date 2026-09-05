@@ -11,6 +11,9 @@ import {
 import type { ChatClient } from "./client.ts";
 import { mergePostIntoList } from "./client.ts";
 
+export { showAgentLoading, useAgentLoadingIndicator } from "@/hooks/use-agent-loading.ts";
+export { useChatDragDrop } from "@/hooks/use-chat-drag-drop.ts";
+export { type ScrollTarget, useScrollToPost } from "@/hooks/use-scroll-to-post.ts";
 export {
   type DisplayAttachment,
   type DisplayMessage,
@@ -24,6 +27,11 @@ export {
   mapSourceMetadata,
   toolStateForDisplay,
 } from "./adapters.ts";
+export {
+  useMessageScroller,
+  useMessageScrollerScrollable,
+  useMessageScrollerVisibility,
+} from "./ai-elements/conversation.tsx";
 export type { ChatClient } from "./client.ts";
 export {
   mergePostIntoList,
@@ -32,14 +40,6 @@ export {
   postToDisplayMessage,
   postToUiMessage,
 } from "./client.ts";
-export { showAgentLoading, useAgentLoadingIndicator } from "@/hooks/use-agent-loading.ts";
-export { useChatDragDrop } from "@/hooks/use-chat-drag-drop.ts";
-export { type ScrollTarget, useScrollToPost } from "@/hooks/use-scroll-to-post.ts";
-export {
-  useMessageScroller,
-  useMessageScrollerScrollable,
-  useMessageScrollerVisibility,
-} from "./ai-elements/conversation.tsx";
 
 type ChatContextValue = {
   client: ChatClient;

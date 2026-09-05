@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
 import { useMemoriesClient } from "@/components/memories/memories-client-provider";
+import { cn } from "@/lib/utils";
 
 export type ProvenanceTimelineProps = {
   namespace: string;

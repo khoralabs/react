@@ -8,11 +8,13 @@ import {
   useRef,
   useState,
 } from "react";
-
-import { DEFAULT_SEARCH_DEBOUNCE_MS } from "@/lib/search-debounce";
-import { useMemoriesClient, useMemoriesDatabase } from "@/components/memories/memories-client-provider";
+import {
+  useMemoriesClient,
+  useMemoriesDatabase,
+} from "@/components/memories/memories-client-provider";
 import { useMemoriesNamespaces } from "@/components/memories/memories-namespaces-provider";
 import type { GraphPayload, GraphSearchState } from "@/components/memories/projection-types";
+import { DEFAULT_SEARCH_DEBOUNCE_MS } from "@/lib/search-debounce";
 
 /**
  * Focused memory identity for feature R/W and scene selection.
@@ -301,7 +303,6 @@ export function MemoriesNamespaceMemoriesProvider({
   }, [reload]);
 
   // Clear focus + search when namespace, scope, or database changes.
-  // biome-ignore lint/correctness/useExhaustiveDependencies: intentional reset on focus scope / DB
   useEffect(() => {
     setFocused(null);
     setSearchQuery("");

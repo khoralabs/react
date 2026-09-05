@@ -1,14 +1,14 @@
 import { FilePlusIcon } from "lucide-react";
 import type { ComponentProps, ReactNode } from "react";
-import { Button } from "@/components/ui/button";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
 import {
   type ChromeButtonTooltipProps,
   chromeButtonTooltipLabel,
   chromeButtonTooltipRootProps,
   partitionChromeButtonChildren,
 } from "@/components/chrome-button-slots";
+import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { cn } from "@/lib/utils";
 
 const DEFAULT_TOOLTIP = "New memory";
 

@@ -7,7 +7,6 @@ import {
   useMemo,
   useState,
 } from "react";
-import { cn } from "@/lib/utils";
 import { EdgeBillboardProvenance } from "@/components/memories/edge-billboard-provenance";
 import type { EdgePreviewJson } from "@/components/memories/memories-client";
 import { useMemoriesClient } from "@/components/memories/memories-client-provider";
@@ -18,8 +17,9 @@ import {
   type TypedGraphLabelInstance,
   type TypedSceneEdge,
 } from "@/components/memories/projection-types";
-import { useEdgeDetail } from "@/hooks/use-edge-detail";
 import { useProjection } from "@/components/memories/use-projection";
+import { useEdgeDetail } from "@/hooks/use-edge-detail";
+import { cn } from "@/lib/utils";
 
 type EdgeBillboardContextValue = {
   edge: TypedSceneEdge;

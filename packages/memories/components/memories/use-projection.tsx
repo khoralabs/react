@@ -16,13 +16,16 @@ import type {
   ProjectionPoint,
   SceneEdge,
 } from "@/components/memories/projection-types";
-import { graphLabelFingerprint, mergeSceneEdgesForPairPreview } from "@/components/memories/projection-types";
+import {
+  graphLabelFingerprint,
+  mergeSceneEdgesForPairPreview,
+} from "@/components/memories/projection-types";
 
-export type { MemoriesGraphNamespaceEntry } from "@/lib/namespace-entries";
 export type {
   GraphScope,
   MemoriesGraphProfileEntry,
 } from "@/components/memories/memories-namespaces-provider";
+export type { MemoriesGraphNamespaceEntry } from "@/lib/namespace-entries";
 
 /** Default delay (ms) before debounced hover state catches up to the pointer. */
 export const DEFAULT_GRAPH_FOCUS_DELAY_MS = 0;
@@ -431,7 +434,6 @@ function ProjectionProviderInner({
     return () => window.removeEventListener("keydown", handler);
   }, [dismissPersistentGraphFocus]);
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: clear click-pin when search text or fetched results change
   useEffect(() => {
     clearFocus();
   }, [searchQuery, graphSearch, clearFocus]);

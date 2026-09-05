@@ -6,10 +6,7 @@
       "type": "registry:hook",
       "title": "Chat hooks",
       "description": "Agent loading, drag-drop, scroll-to-post",
-      "dependencies": [
-        "ai",
-        "@shadcn/react"
-      ],
+      "dependencies": ["ai", "@shadcn/react"],
       "files": [
         {
           "path": "hooks/use-agent-loading.ts",
@@ -134,15 +131,8 @@
       "type": "registry:component",
       "title": "Chat headless provider",
       "description": "ChatProvider, data hooks, and display adapters",
-      "dependencies": [
-        "@khoralabs/chat",
-        "ai",
-        "react",
-        "react-dom"
-      ],
-      "registryDependencies": [
-        "khoralabs/react/chat-hooks"
-      ],
+      "dependencies": ["@khoralabs/chat", "ai", "react", "react-dom"],
+      "registryDependencies": ["khoralabs/react/chat-hooks"],
       "files": [
         {
           "path": "components/chat/provider.tsx",

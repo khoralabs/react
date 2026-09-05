@@ -8,6 +8,12 @@ import {
   useContext,
   useMemo,
 } from "react";
+import { AddNamespaceButton } from "@/components/memories/add-namespace-button";
+import { RefreshGraphButton } from "@/components/memories/graph-refresh-button";
+import {
+  type GraphScope,
+  useMemoriesNamespaces,
+} from "@/components/memories/memories-namespaces-provider";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import {
   SidebarGroup,
@@ -18,9 +24,6 @@ import {
   SidebarMenuItem,
   SidebarMenuSub,
 } from "@/components/ui/sidebar";
-import { cn } from "@/lib/utils";
-import { AddNamespaceButton } from "@/components/memories/add-namespace-button";
-import { RefreshGraphButton } from "@/components/memories/graph-refresh-button";
 import { type MemoriesGraphNamespaceEntry, namespaceEntryLabel } from "@/lib/namespace-entries";
 import {
   buildSearchNamespaceTree,
@@ -31,7 +34,7 @@ import {
   marksNamespaceTreeLabelAction,
   NAMESPACE_TREE_LABEL_ACTION,
 } from "@/lib/namespace-tree-label-action";
-import { type GraphScope, useMemoriesNamespaces } from "@/components/memories/memories-namespaces-provider";
+import { cn } from "@/lib/utils";
 
 export type GraphNamespaceTreeProps = {
   className?: string;

@@ -1,7 +1,7 @@
 import { Handle, type NodeProps, type NodeTypes, Position } from "@xyflow/react";
 import { type ComponentPropsWithoutRef, memo } from "react";
-import type { NbcChainOfferNodeData, NbcChainPortNodeData } from "./layout";
 import { mergeClassNames } from "@/lib/merge-class-names";
+import type { NbcChainOfferNodeData, NbcChainPortNodeData } from "./layout";
 
 export type NbcChainOfferNodeProps = NodeProps & ComponentPropsWithoutRef<"div">;
 

@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
+import { formatOntologyLabelChain } from "@/components/memories/memory-detail-ontology";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { formatOntologyLabelChain } from "@/components/memories/memory-detail-ontology";
 
 /** Truncate a memory key for inline chain fallbacks. */
 export function truncateRelationKey(key: string, max = 28): string {

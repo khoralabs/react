@@ -434,7 +434,6 @@ function ProjectionProviderInner({
     return () => window.removeEventListener("keydown", handler);
   }, [dismissPersistentGraphFocus]);
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: clear click-pin when search text or fetched results change
   useEffect(() => {
     clearFocus();
   }, [searchQuery, graphSearch, clearFocus]);
