@@ -307,11 +307,11 @@
           "type": "registry:component"
         },
         {
-          "path": "lib/chrome-button-slots.tsx",
+          "path": "components/chrome-button-slots.tsx",
           "type": "registry:component"
         },
         {
-          "path": "lib/graph-search-field.tsx",
+          "path": "components/graph-search-field.tsx",
           "type": "registry:component"
         }
       ]

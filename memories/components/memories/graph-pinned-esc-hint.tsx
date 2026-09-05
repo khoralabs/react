@@ -8,7 +8,7 @@ import {
   chromeButtonTooltipLabel,
   chromeButtonTooltipRootProps,
   partitionChromeButtonChildren,
-} from "@/lib/chrome-button-slots";
+} from "@/components/chrome-button-slots";
 import { useMemoriesGraphChrome } from "@/components/memories/use-projection";
 
 const DEFAULT_TOOLTIP = "Clear edge focus";

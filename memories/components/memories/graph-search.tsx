@@ -1,7 +1,7 @@
 import { ScanSearchIcon } from "lucide-react";
 import type { ComponentProps } from "react";
 import type { InputGroup } from "@/components/ui/input-group";
-import { createGraphSearchField } from "@/lib/graph-search-field";
+import { createGraphSearchField } from "@/components/graph-search-field";
 import { useGraphMemoriesSearch } from "@/hooks/use-graph-search";
 
 /**

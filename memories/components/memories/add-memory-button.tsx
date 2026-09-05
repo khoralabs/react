@@ -8,7 +8,7 @@ import {
   chromeButtonTooltipLabel,
   chromeButtonTooltipRootProps,
   partitionChromeButtonChildren,
-} from "@/lib/chrome-button-slots";
+} from "@/components/chrome-button-slots";
 
 const DEFAULT_TOOLTIP = "New memory";
 
