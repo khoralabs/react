@@ -1,0 +1,2 @@
+/* Optional host theme bridge. Do not @import tailwindcss here. */
+@custom-variant dark (&:is(.dark *));

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "khoralabs",
+  "homepage": "https://github.com/khoralabs/react",
+  "include": ["chat/registry.json"]
+}
