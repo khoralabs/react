@@ -49,8 +49,7 @@ bun run dev:obp
 | `memories` | Full kit |
 | `memories-graph` | GraphScene + chrome + billboards |
 | `memories-headless` | Providers + client types |
-| `memories-ui` | Sidebar / sheet / skeleton / kbd |
-| `memories-hooks` | Mobile + resize-observer helpers |
+| `memories-hooks` | Resize-observer helpers |
 
 Peer runtime for graph: `three`, `@react-three/fiber`, `@react-three/drei`, `@react-three/postprocessing`.
 

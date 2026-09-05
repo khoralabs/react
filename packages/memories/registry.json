@@ -2,44 +2,10 @@
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "items": [
     {
-      "name": "memories-ui",
-      "type": "registry:ui",
-      "title": "Memories UI extras",
-      "description": "Sidebar, sheet, skeleton, kbd used by graph chrome",
-      "dependencies": [
-        "class-variance-authority",
-        "lucide-react",
-        "radix-ui"
-      ],
-      "registryDependencies": [
-        "khoralabs/react/ui",
-        "khoralabs/react/utils",
-        "khoralabs/react/memories-hooks"
-      ],
-      "files": [
-        {
-          "path": "components/ui/kbd.tsx",
-          "type": "registry:ui"
-        },
-        {
-          "path": "components/ui/sheet.tsx",
-          "type": "registry:ui"
-        },
-        {
-          "path": "components/ui/sidebar.tsx",
-          "type": "registry:ui"
-        },
-        {
-          "path": "components/ui/skeleton.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
       "name": "memories-hooks",
       "type": "registry:hook",
       "title": "Memories hooks",
-      "description": "Mobile, search, detail, resize-observer helpers",
+      "description": "Search, detail, resize-observer helpers",
       "dependencies": [
         "react"
       ],
@@ -47,10 +13,6 @@
         "khoralabs/react/utils"
       ],
       "files": [
-        {
-          "path": "hooks/use-mobile.ts",
-          "type": "registry:hook"
-        },
         {
           "path": "hooks/use-suppress-benign-resize-observer-errors.ts",
           "type": "registry:hook"
@@ -172,7 +134,6 @@
       ],
       "registryDependencies": [
         "khoralabs/react/memories-headless",
-        "khoralabs/react/memories-ui",
         "khoralabs/react/memories-hooks",
         "khoralabs/react/ui",
         "khoralabs/react/utils"
@@ -328,7 +289,6 @@
       "registryDependencies": [
         "khoralabs/react/memories-headless",
         "khoralabs/react/memories-graph",
-        "khoralabs/react/memories-ui",
         "khoralabs/react/memories-hooks",
         "khoralabs/react/ui",
         "khoralabs/react/utils"

@@ -4,7 +4,9 @@
     "paths": {
       "@/*": ["./*"],
       "@/lib/utils": ["../utils/lib/utils"],
-      "@/components/ui/*": ["./components/ui/*", "../ui/components/ui/*"]
+      "@/components/ui/*": ["../ui/components/ui/*"],
+      "@/hooks/use-mobile": ["../ui/hooks/use-mobile"],
+      "@/hooks/use-mobile.ts": ["../ui/hooks/use-mobile.ts"]
     }
   },
   "include": [

@@ -5,7 +5,7 @@
       "name": "ui",
       "type": "registry:ui",
       "title": "Shared UI primitives",
-      "description": "shadcn-style primitives used by Khora surfaces",
+      "description": "shadcn-style primitives used by Khora surfaces (incl. sidebar/sheet/kbd)",
       "dependencies": [
         "@radix-ui/react-slot",
         "class-variance-authority",
@@ -13,25 +13,98 @@
         "radix-ui",
         "cmdk"
       ],
-      "registryDependencies": ["khoralabs/react/utils"],
+      "registryDependencies": [
+        "khoralabs/react/utils"
+      ],
       "files": [
-        { "path": "components/ui/alert.tsx", "type": "registry:ui" },
-        { "path": "components/ui/avatar.tsx", "type": "registry:ui" },
-        { "path": "components/ui/badge.tsx", "type": "registry:ui" },
-        { "path": "components/ui/button-group.tsx", "type": "registry:ui" },
-        { "path": "components/ui/button.tsx", "type": "registry:ui" },
-        { "path": "components/ui/collapsible.tsx", "type": "registry:ui" },
-        { "path": "components/ui/command.tsx", "type": "registry:ui" },
-        { "path": "components/ui/dialog.tsx", "type": "registry:ui" },
-        { "path": "components/ui/dropdown-menu.tsx", "type": "registry:ui" },
-        { "path": "components/ui/hover-card.tsx", "type": "registry:ui" },
-        { "path": "components/ui/input-group.tsx", "type": "registry:ui" },
-        { "path": "components/ui/input.tsx", "type": "registry:ui" },
-        { "path": "components/ui/select.tsx", "type": "registry:ui" },
-        { "path": "components/ui/separator.tsx", "type": "registry:ui" },
-        { "path": "components/ui/spinner.tsx", "type": "registry:ui" },
-        { "path": "components/ui/textarea.tsx", "type": "registry:ui" },
-        { "path": "components/ui/tooltip.tsx", "type": "registry:ui" }
+        {
+          "path": "components/ui/alert.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/avatar.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/badge.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/button-group.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/button.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/collapsible.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/command.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/dialog.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/hover-card.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/input-group.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/input.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/kbd.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/select.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/separator.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/sheet.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/sidebar.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/skeleton.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/spinner.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/textarea.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/tooltip.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "hooks/use-mobile.ts",
+          "type": "registry:hook"
+        }
       ]
     }
   ]
