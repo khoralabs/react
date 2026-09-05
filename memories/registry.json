@@ -1,0 +1,341 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "memories-ui",
+      "type": "registry:ui",
+      "title": "Memories UI extras",
+      "description": "Sidebar, sheet, skeleton, kbd used by graph chrome",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "khoralabs/react/ui",
+        "khoralabs/react/utils",
+        "khoralabs/react/memories-hooks"
+      ],
+      "files": [
+        {
+          "path": "components/ui/kbd.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/sheet.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/sidebar.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "memories-hooks",
+      "type": "registry:hook",
+      "title": "Memories hooks",
+      "description": "Mobile, search, detail, resize-observer helpers",
+      "dependencies": [
+        "react"
+      ],
+      "registryDependencies": [
+        "khoralabs/react/utils"
+      ],
+      "files": [
+        {
+          "path": "hooks/use-mobile.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "hooks/use-suppress-benign-resize-observer-errors.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "memories-headless",
+      "type": "registry:component",
+      "title": "Memories headless providers",
+      "description": "Client, namespaces, memory, and projection providers",
+      "dependencies": [
+        "@khoralabs/memories-service",
+        "react",
+        "react-dom"
+      ],
+      "registryDependencies": [
+        "khoralabs/react/utils"
+      ],
+      "files": [
+        {
+          "path": "components/memories/memories-client-provider.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/memories-client.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/memories-memory-provider.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/memories-namespaces-provider.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/projection-types.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/use-projection.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "lib/memory-merge.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "lib/memory-path.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "lib/memory-properties.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "lib/namespace-entries.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "lib/namespace-path.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "lib/namespace-tree-label-action.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "lib/namespace-tree.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "lib/pretext-measure.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "lib/search-debounce.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "lib/suppress-benign-resize-observer-errors.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "hooks/use-edge-detail.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "hooks/use-graph-search.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "hooks/use-memory-detail.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "memories-graph",
+      "type": "registry:block",
+      "title": "Memories graph UI",
+      "description": "3D GraphScene, chrome, billboards",
+      "dependencies": [
+        "@khoralabs/memories-service",
+        "@base-ui/react",
+        "@chenglou/pretext",
+        "@react-three/drei",
+        "@react-three/fiber",
+        "@react-three/postprocessing",
+        "three",
+        "lucide-react",
+        "react",
+        "react-dom"
+      ],
+      "registryDependencies": [
+        "khoralabs/react/memories-headless",
+        "khoralabs/react/memories-ui",
+        "khoralabs/react/memories-hooks",
+        "khoralabs/react/ui",
+        "khoralabs/react/utils"
+      ],
+      "files": [
+        {
+          "path": "components/memories/add-memory-button.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/add-namespace-button.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/edge-billboard-provenance.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/edge-billboard.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/edges.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-billboard-compounds.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-camera-chrome.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-fetch-error.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-loading.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-namespace-search.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-namespace-tree.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-overlay-container.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-pinned-esc-hint.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-preview-dock.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-refresh-button.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-scene-edge.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-scene-fog-effects-impl.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-scene-fog-effects.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-scene-fog.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-scene-node.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-scene-slots.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/graph-search.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/loader-with-message.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/measured-text.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/memory-detail-ontology.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/memory-metadata.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/memory-relation-hovers.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/node-billboard-provenance.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/node-billboard.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/provenance-timeline.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/relation-chain.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/memories/scene.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "lib/chrome-button-slots.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "lib/graph-search-field.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "memories",
+      "type": "registry:block",
+      "title": "Memories kit",
+      "description": "Full memories graph headless + UI kit",
+      "registryDependencies": [
+        "khoralabs/react/memories-headless",
+        "khoralabs/react/memories-graph",
+        "khoralabs/react/memories-ui",
+        "khoralabs/react/memories-hooks",
+        "khoralabs/react/ui",
+        "khoralabs/react/utils"
+      ],
+      "files": [
+        {
+          "path": "styles/theme-bridge.css",
+          "type": "registry:style",
+          "target": "~/src/styles/khoralabs-memories-theme-bridge.css"
+        }
+      ]
+    }
+  ]
+}

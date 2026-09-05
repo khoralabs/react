@@ -1,0 +1,2 @@
+/* Host owns Tailwind. Optional token note for memories graph hosts. */
+@custom-variant dark (&:is(.dark *));
